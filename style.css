@@ -175,3 +175,181 @@ body {
     padding: 20px;
     margin-top: 40px;
 }
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+   background-image: url(https://wallpapercave.com/wp/wp15288118.jpg);
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   padding-top: 100px;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 300px; */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.navbar-container {
+    background-color: rgb(0, 6, 56);
+    width: 100%;
+    padding: 1px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.ul-navbar {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    list-style-type: none;
+    margin: 1px;
+    padding: 10px 20px;
+    color: black;
+    transition: background-color 0.5s ease;
+}
+
+.li-navbar:hover {
+    background-color: rgba(139, 3, 3, 0.582);
+    border-radius: 15px;
+}
+
+.a-navbar {
+    font-size: 20px;
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+.isi-container h3 {
+  font-size: 35px;
+  color: white;
+  text-shadow: 
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+
+    margin: 20px auto;
+    padding: 0 1%;
+    text-align: center;
+}
+
+.isi-container span {
+    color: rgb(0, 24, 241);
+}
+
+.isi-container p {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  1px 0 black;
+
+    margin: 20px auto;
+    padding: 0 1%;
+    text-align: justify;
+}
+
+.judul-galeri {
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    text-shadow: 
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px  2px 0 black,
+        2px  2px 0 black;
+
+    margin: 250px auto 15px auto;
+    padding: 0 1%;
+    text-align: center;
+}
+
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin: 30px auto 60px auto;
+    width: 97%;
+}
+
+.galeri img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.galeri img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    filter: brightness(1.1);
+}
+
+.judul-table{
+    font-size: 30px;
+    color: rgb(0, 24, 241);
+    text-shadow: 
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px  2px 0 black,
+        2px  2px 0 black;
+
+    margin: 250px auto 30px auto;
+    padding: 0 1%;
+    text-align: center;
+}
+
+.judul-table span {
+    color: rgb(255, 0, 0);
+}
+.table {
+    font-size: 35px;
+    color: white;
+    text-shadow: 
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px  2px 0 black,
+        2px  2px 0 black;
+
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.footer {
+    background: rgb(0, 6, 56);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
