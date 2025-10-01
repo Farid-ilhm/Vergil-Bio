@@ -175,3 +175,42 @@ body {
     padding: 20px;
     margin-top: 40px;
 }
+
+/* Responsive Design Section*/
+/* Tablet */
+@media (max-width: 1024px) {
+  .materi-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* HP */
+@media (max-width: 600px) {
+  .ul-navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .materi-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .materi-box h3 {
+    font-size: 20px;
+  }
+
+  .materi-box p {
+    font-size: 14px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
